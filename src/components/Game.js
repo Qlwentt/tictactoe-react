@@ -105,7 +105,7 @@ function Game() {
             if (gameIsOver) {
                 return null
             }
-            const response = await fetch(`${API_URL}/api/get-move`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/get-move`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
