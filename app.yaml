@@ -8,5 +8,4 @@ handlers:
   - url: /.*
     static_files: build/index.html
     upload: build/index.html
-env_variables:   
-  REACT_APP_API_URL: https://tic-tac-toe-api-356923.ue.r.appspot.com
+  
