@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import styled from 'styled-components';
-import { API_URL } from '../constants/constants';
 import { getWinner } from '../utils/utils';
 import Board from './Board';
 import Button from 'react-bootstrap/Button';
