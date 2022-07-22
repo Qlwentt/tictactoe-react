@@ -51,7 +51,7 @@ function Board({ board, setBoard, player, gameIsOver }) {
                     {row.map((column, colIndex) => (
                         <Col noGutter col key={colIndex} xl="4" lg="4" md="4" sm="4">
                             <Cell cellState={board[rowIndex][colIndex]}onClick={()=>{
-                                if(!gameIsOver && board[rowIndex][colIndex] === ''){
+                                if(!gameIsOver && board[rowIndex][colIndex] === '' && player === 'X'){
                                     updateBoard(rowIndex, colIndex);
                                 }
                             }}>
